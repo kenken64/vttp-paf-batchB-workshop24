@@ -7,6 +7,11 @@ public class LineItem implements Serializable{
     private String description;
     private Integer quantity;
 
+    public LineItem(String description, Integer quantity) {
+        this.description = description;
+        this.quantity = quantity;
+    }
+    
     public Integer getItemId() {
         return itemId;
     }
@@ -26,7 +31,7 @@ public class LineItem implements Serializable{
     public Integer getQuantity() {
         return quantity;
     }
-    
+
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
     }
